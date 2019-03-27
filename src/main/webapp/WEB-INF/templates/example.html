@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"></meta>
+    <title>Hello</title>
+</head>
+<body>
+    <p th:text="${username}">neo</p>
+    <span th:text="|Welcome to our application,${username}|"></span>
+    <hr/>
+    <a th:if="${flag == 'yes'}" th:href="@{http://www.baidu.com}">home</a>
+    <a th:unless="${flag != 'no'}" th:href="@{http://www.ityouknow.com}"></a>
+</body>
+</html>
